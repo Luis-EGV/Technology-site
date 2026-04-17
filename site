@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grupo Projeto</title>
+<style>
+body { font-family: Arial; padding: 30px; background:#f4f4f4; }
+.box { background:white; padding:20px; border-radius:10px; }
+</style>
+</head>
+<body>
+
+<div class="box">
+<h1>Informações do Grupo</h1>
+<p><b>Integrantes:</b> João, Maria, Carlos</p>
+<p><b>Tema:</b> Sistema de Gestão</p>
+<p><b>Prazo:</b> 30/05/2026</p>
+<p><b>Status:</b> Em andamento</p>
+</div>
+
+</body>
+</html>
