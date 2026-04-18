@@ -1,21 +1,34 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-BR">
 <head>
-<title>Grupo Technology Systems</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TECNOLOGY SYSTEM</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body { font-family: Arial; padding: 30px; background:#f4f4f4; }
-.box { background:white; padding:20px; border-radius:10px; }
+:root{--bg:#0a0a0f;--surface:#12121c;--text:#e0e6f0;--p:#00d4ff;--s:#7c3aed}body{margin:0;background:var(--bg);color:var(--text);font-family:Rajdhani,sans-serif}html{scroll-behavior:smooth}.card{background:var(--surface);border:1px solid rgba(0,212,255,.1)}.avatar{width:90px;height:90px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 28px Orbitron}.fade{opacity:0;transform:translateY(25px);transition:.7s}.fade.show{opacity:1;transform:none}canvas{position:fixed;inset:0;z-index:0}.wrap{position:relative;z-index:1}
 </style>
 </head>
 <body>
-
-<div class="box">
-<h1>Informações do Grupo</h1>
-<p><b>Integrantes:</b> Luís, Gabriel, Alison, Gustavo</p>
-<p><b>Projeto:</b> Priora</p>
-<p><b>Prazo:</b> Até final do ano</p>
-<p><b>Status:</b> Em andamento</p>
-</div>
-
-</body>
-</html>
+<canvas id="bg"></canvas>
+<div class="wrap">
+<nav class="fixed top-0 w-full bg-black/60 backdrop-blur border-b border-cyan-500/10 z-50"><div class="max-w-6xl mx-auto px-4 py-3 flex justify-between"><b style="font-family:Orbitron;color:var(--p)">TECNOLOGY SYSTEM</b><div class="space-x-4 hidden md:block"><a href="#team">Equipe</a><a href="#services">Serviços</a><a href="#contact">Contato</a></div></div></nav>
+<section class="min-h-screen flex items-center justify-center text-center px-4"><div><h1 id="typed" class="text-5xl font-black mb-4" style="font-family:Orbitron"></h1><p class="text-xl opacity-70">Desenvolvemos aplicativos, sistemas e soluções com IA.</p></div></section>
+<section id="services" class="max-w-6xl mx-auto px-4 py-16"><h2 class="text-4xl font-bold mb-8 text-center">Serviços</h2><div class="grid md:grid-cols-3 gap-6"><div class="card p-6 rounded-xl">Apps Mobile</div><div class="card p-6 rounded-xl">Sites Profissionais</div><div class="card p-6 rounded-xl">Inteligência Artificial</div></div></section>
+<section id="team" class="max-w-6xl mx-auto px-4 py-16"><h2 class="text-4xl font-bold mb-8 text-center">Equipe</h2><div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="card p-6 rounded-xl text-center fade"><div class="avatar mx-auto mb-3" style="background:linear-gradient(135deg,#00d4ff,#7c3aed)">L</div><h3>Luís</h3><p class="opacity-70">Backend / Liderança</p></div>
+<div class="card p-6 rounded-xl text-center fade"><div class="avatar mx-auto mb-3" style="background:linear-gradient(135deg,#f472b6,#7c3aed)">G</div><h3>Gabriel</h3><p class="opacity-70">Frontend</p></div>
+<div class="card p-6 rounded-xl text-center fade"><div class="avatar mx-auto mb-3" style="background:linear-gradient(135deg,#00d4ff,#06b6d4)">A</div><h3>Alison</h3><p class="opacity-70">Documentação</p></div>
+<div class="card p-6 rounded-xl text-center fade"><div class="avatar mx-auto mb-3" style="background:linear-gradient(135deg,#a78bfa,#7c3aed)">G</div><h3>Gustavo</h3><p class="opacity-70">Design / Slides</p></div>
+</div></section>
+<section id="contact" class="max-w-3xl mx-auto px-4 py-16"><h2 class="text-4xl font-bold mb-8 text-center">Contato</h2><form class="card p-6 rounded-xl space-y-4"><input class="w-full p-3 rounded bg-black/30" placeholder="Nome"><input class="w-full p-3 rounded bg-black/30" placeholder="E-mail"><textarea class="w-full p-3 rounded bg-black/30" rows="4" placeholder="Mensagem"></textarea><button class="w-full p-3 rounded font-bold" style="background:var(--p);color:#000">Enviar</button></form></section>
+<footer class="text-center py-8 opacity-60">© 2026 TECNOLOGY SYSTEM</footer></div>
+<script>
+const txt='Transformando ideias em tecnologia inteligente';let i=0;const el=document.getElementById('typed');(function type(){if(i<txt.length){el.textContent+=txt[i++];setTimeout(type,45)}})();
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')));document.querySelectorAll('.fade').forEach(x=>io.observe(x));
+const c=document.getElementById('bg'),x=c.getContext('2d');let w,h,p=[];function rs(){w=c.width=innerWidth;h=c.height=innerHeight}addEventListener('resize',rs);rs();for(let i=0;i<60;i++)p.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:Math.random()*2+1});function draw(){x.clearRect(0,0,w,h);p.forEach(a=>{a.x=(a.x+a.vx+w)%w;a.y=(a.y+a.vy+h)%h;x.beginPath();x.arc(a.x,a.y,a.r,0,7);x.fillStyle='rgba(0,212,255,.7)';x.fill()});requestAnimationFrame(draw)}draw();
+lucide.createIcons();
+</script>
+</body></html>
