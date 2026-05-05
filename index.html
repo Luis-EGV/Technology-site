@@ -1,103 +1,180 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Technology System</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
+<title>PRIORA</title>
 
 <style>
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#0a0a0f;
-color:white;
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
 }
 
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+body {
+  background:#f4f4f4;
 }
 
-.btn{
-background:#00d4ff;
-color:black;
-padding:12px 25px;
-border-radius:8px;
-font-weight:bold;
-margin-top:20px;
-display:inline-block;
-text-decoration:none;
+/* TOPO */
+.header {
+  background:#0a3d62;
+  color:white;
+  text-align:center;
+  padding:20px;
 }
 
-.section{
-padding:80px 20px;
-max-width:1100px;
-margin:auto;
+/* BANNER */
+.banner img {
+  width:100%;
+  height:300px;
+  object-fit:cover;
 }
 
-.card{
-background:#12121c;
-padding:25px;
-border-radius:12px;
-margin:10px;
+/* SEÇÕES */
+.section {
+  padding:40px 20px;
+  text-align:center;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+/* CARD PRINCIPAL */
+.main-card {
+  background:white;
+  max-width:700px;
+  margin:auto;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.main-card img {
+  width:120px;
+  margin-bottom:15px;
+}
+
+/* FUNCIONALIDADES */
+.features {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+  gap:20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.feature-box {
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* EQUIPE */
+.team {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
+  gap:20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.member {
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.member img {
+  width:100%;
+  border-radius:10px;
+}
+
+/* RODAPÉ */
+.footer {
+  background:#0a3d62;
+  color:white;
+  text-align:center;
+  padding:20px;
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-<h1 style="font-size:50px;">Technology System</h1>
-<p>Transformando ideias em tecnologia inteligente</p>
-<a href="#servicos" class="btn">Conheça nossos serviços</a>
-</section>
-
-<section id="servicos" class="section">
-<h2>Serviços</h2>
-
-<div class="grid">
-<div class="card">Apps Mobile</div>
-<div class="card">Sites Profissionais</div>
-<div class="card">Inteligência Artificial</div>
-<div class="card">Sistemas Empresariais</div>
+<!-- TOPO -->
+<div class="header">
+  <h1>PRIORA</h1>
+  <p>Sua cidade melhor todos os dias</p>
 </div>
-</section>
 
-<section class="section">
-<h2>Equipe</h2>
-
-<div class="grid">
-<div class="card">Luís - Backend</div>
-<div class="card">Gabriel - Frontend</div>
-<div class="card">Alison - Documentação</div>
-<div class="card">Gustavo - Design</div>
+<!-- BANNER -->
+<div class="banner">
+  <img src="assets/banner.png" alt="Banner">
 </div>
-</section>
 
-<section class="section">
-<h2>Contato</h2>
+<!-- SISTEMA -->
+<div class="section">
+  <div class="main-card">
+    <img src="assets/logo.png" alt="Logo">
+    <h2>Technology System</h2>
 
-<div class="card">
-<p>Email: contato@technologysystem.com</p>
+    <p>
+      A Tecnologia Priora é um sistema inteligente que utiliza inteligência artificial
+      para analisar ocorrências urbanas e definir automaticamente a prioridade de atendimento,
+      ajudando a gestão pública a tomar decisões mais rápidas e eficientes.
+    </p>
+  </div>
 </div>
-</section>
 
-<footer style="text-align:center;padding:30px;">
-© 2026 Technology System
-</footer>
+<!-- FUNCIONALIDADES -->
+<div class="section">
+  <h2>Funcionalidades</h2><br>
+
+  <div class="features">
+    <div class="feature-box">📍 Registro de ocorrências</div>
+    <div class="feature-box">📷 Envio de fotos</div>
+    <div class="feature-box">🧠 Análise com IA</div>
+    <div class="feature-box">📊 Priorização automática (IPU)</div>
+  </div>
+</div>
+
+<!-- EQUIPE -->
+<div class="section">
+  <h2>Nossa Equipe</h2><br>
+
+  <div class="team">
+
+    <div class="member">
+      <img src="assets/user1.png" alt="Luís">
+      <h3>Luís</h3>
+      <p>Desenvolvedor Full Stack</p>
+    </div>
+
+    <div class="member">
+      <img src="assets/user2.png" alt="Gabriel">
+      <h3>Gabriel</h3>
+      <p>Arquitetura de Sistema</p>
+    </div>
+
+    <div class="member">
+      <img src="assets/user3.png" alt="João">
+      <h3>João</h3>
+      <p>Banco de Dados</p>
+    </div>
+
+    <div class="member">
+      <img src="assets/user4.png" alt="Maria">
+      <h3>Maria</h3>
+      <p>UX/UI Designer</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- RODAPÉ -->
+<div class="footer">
+  <p>© 2026 - Projeto PRIORA</p>
+</div>
 
 </body>
 </html>
