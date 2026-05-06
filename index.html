@@ -1,180 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>PRIORA</title>
-
-<style>
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial;
-}
-
-body {
-  background:#f4f4f4;
-}
-
-/* TOPO */
-.header {
-  background:#0a3d62;
-  color:#f4f4f4;
-  text-align:center;
-  padding:20px;
-}
-
-/* BANNER */
-.banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* SEÇÕES */
-.section {
-  padding:40px 20px;
-  text-align:center;
-}
-
-/* CARD PRINCIPAL */
-.main-card {
-  background: #f4f4f4;
-  max-width:700px;
-  margin:auto;
-  padding:30px;
-  text-align:center;
-}
-
-.main-card img {
-  width:200px;
-  height:auto;
-  display:block;
-  margin:0 auto 20px;
-}
-
-/* FUNCIONALIDADES */
-.features {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
-  gap:20px;
-  max-width:900px;
-  margin:auto;
-}
-
-.feature-box {
-  background:white;
-  padding:20px;
-  border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* EQUIPE */
-.team {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
-  gap:20px;
-  max-width:900px;
-  margin:auto;
-}
-
-.member {
-  background:white;
-  padding:15px;
-  border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-.member img {
-  width:100%;
-  border-radius:10px;
-}
-
-/* RODAPÉ */
-.footer {
-  background:#0a3d62;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Systems | Priora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-
 <body>
 
-<!-- TOPO -->
-<div class="header">
-  <h1>PRIORA</h1>
-  <p>Sua cidade melhor todos os dias</p>
-</div>
+    <nav id="navbar">
+        <div class="logo">TECHNOLOGY SYSTEMS</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#app">O Aplicativo</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+        </ul>
+    </nav>
 
-<!-- BANNER -->
-<div class="banner">
-  <img src="assets/banner.png" alt="banner">
-</div>
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>SUA CIDADE MELHOR TODOS OS DIAS</h1>
+            <p>Conheça o <strong>PRIORA</strong>: Inteligência Artificial para gestão pública.</p>
+            <button class="btn-cta">Baixar App</button>
+        </div>
+    </header>
 
-<!-- SISTEMA -->
-<div class="section">
-  <div class="main-card">
-    <img src="assets/logo.png" alt="Logo">
-    <h2>Priora</h2>    
-    <p>
-      A tecnologia Priora é um sistema inteligente que utiliza inteligência artificial
-      para analisar ocorrências urbanas e definir automaticamente a prioridade de atendimento,
-      ajudando a gestão pública a tomar decisões mais rápidas e eficientes.
-    </p>
-  </div>
-</div>
+    <section id="sobre" class="container">
+        <h2>SOBRE NÓS</h2>
+        <p>A Technology Systems cria sistemas com Inteligência Artificial para solucionar problemas do dia-a-dia, entregando produtos confiáveis e funcionais.</p>
+    </section>
 
-<!-- FUNCIONALIDADES -->
-<div class="section">
-  <h2>Funcionalidades</h2><br>
+    <section id="app" class="app-section">
+        <h2>CONHEÇA O PRIORA</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/800x400?text=Gestão+Inteligente" alt="Funcionalidade 1">
+                    <h3>Gestão Inteligente</h3>
+                    <p>Relate problemas da sua cidade em tempo real.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/800x400?text=Análise+de+Dados" alt="Funcionalidade 2">
+                    <h3>Análise de Dados</h3>
+                    <p>IA avançada para priorização de demandas urbanas.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/800x400?text=Comunicação+Direta" alt="Funcionalidade 3">
+                    <h3>Comunicação Direta</h3>
+                    <p>Transparência total entre o cidadão e a prefeitura.</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
-  <div class="features">
-    <div class="feature-box">Registro de ocorrências</div>
-    <div class="feature-box">Envio de fotos</div>
-    <div class="feature-box">Análise com IA</div>
-    <div class="feature-box">Priorização automática</div>
-  </div>
-</div>
-
-<!-- EQUIPE -->
-<div class="section">
-  <h2>Nossa Equipe</h2><br>
-
-  <div class="team">
-
-    <div class="member">
-      <img src="assets/user1.png" alt="Luís">
-      <h3>Luís Eduardo</h3>
-      <p>Define funcionalidades, organiza o Product Backlog, planeja entregas e desenvolve a estrutura e lógica do sistema.</p>
-    </div>
-
-    <div class="member">
-      <img src="assets/user2.png" alt="Gabriel">
-      <h3>Gabriel Victor</h3>
-      <p>Responsável pelo desenvolvimento da interface do sistema e pela realização de testes e validações de qualidade.</p>
-    </div>
-
-    <div class="member">
-      <img src="assets/user3.png" alt="Gustavo">
-      <h3>Gustavo Luís</h3>
-      <p>Responsável por gerenciar o design da interface, experiência do usuário (UI/UX), cores, tipografia e elementos visuais do aplicativo.</p>
-    </div>
-
-    <div class="member">
-      <img src="assets/user4.png" alt="Alison">
-      <h3>Alison Ferreira</h3>
-      <p>Responsável pela documentação do projeto, organização de informações e registro das etapas de desenvolvimento.</p>
-    </div>
-
-  </div>
-</div>
-
-<!-- RODAPÉ -->
-<div class="footer">
-  <p>© 2026 - Projeto PRIORA</p>
-</div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Inicialização do Carrossel
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            autoplay: { delay: 3000 }
+        });
+    </script>
 </body>
 </html>
