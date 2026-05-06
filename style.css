@@ -1,1 +1,94 @@
+/* Configurações Gerais */
+html {
+    scroll-behavior: smooth; /* Faz o deslize suave do menu */
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Menu Fixo */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    color: white;
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    color: #00ccff;
+}
+
+/* Hero Section (Banner) */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x1080');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.btn-cta {
+    background: #28a745;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Seções de Conteúdo */
+.container {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* Estilo do Carrossel */
+.app-section {
+    padding: 60px 10%;
+    background: white;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.swiper-slide {
+    text-align: center;
+    padding: 20px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
