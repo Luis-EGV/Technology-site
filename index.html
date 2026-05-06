@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology Systems | Priora</title>
+    <title>Technology Systems - Priora</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -13,43 +13,53 @@
         <div class="logo">TECHNOLOGY SYSTEMS</div>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#app">O Aplicativo</a></li>
+            <li><a href="#empresa">A Empresa</a></li>
+            <li><a href="#priora">O App Priora</a></li>
             <li><a href="#equipe">Equipe</a></li>
         </ul>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1>SUA CIDADE MELHOR TODOS OS DIAS</h1>
-            <p>Conheça o <strong>PRIORA</strong>: Inteligência Artificial para gestão pública.</p>
-            <button class="btn-cta">Baixar App</button>
+    <header id="home" class="hero-banner">
+        <div class="hero-text">
+            <h1>SUA CIDADE MELHOR TODOS OS DIAS!</h1>
+            <p>Com o <strong>PRIORA</strong> você ajuda a transformar sua cidade em um lugar mais ágil e inteligente.</p>
+            <div class="store-buttons">
+                <button>Google Play</button>
+                <button>App Store</button>
+            </div>
         </div>
     </header>
 
-    <section id="sobre" class="container">
-        <h2>SOBRE NÓS</h2>
-        <p>A Technology Systems cria sistemas com Inteligência Artificial para solucionar problemas do dia-a-dia, entregando produtos confiáveis e funcionais.</p>
+    <section id="empresa" class="section-white">
+        <img src="logo-tech-systems.png" alt="Logo Technology Systems" class="center-logo">
+        <div class="container">
+            <h2>TECHNOLOGY SYSTEMS</h2>
+            <p>A Technology Systems é uma empresa que tem como objetivo criar sistemas com Inteligência Artificial para solucionar problemas do dia-a-dia.</p>
+            <p>Temos como objetivo entregar produtos tecnológicos confiáveis, funcionais e que gerem resultados concretos para nossos clientes.</p>
+        </div>
     </section>
 
-    <section id="app" class="app-section">
+    <section id="priora" class="section-gray">
         <h2>CONHEÇA O PRIORA</h2>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://via.placeholder.com/800x400?text=Gestão+Inteligente" alt="Funcionalidade 1">
-                    <h3>Gestão Inteligente</h3>
-                    <p>Relate problemas da sua cidade em tempo real.</p>
+                    <div class="card">
+                        <h3>Gestão Pública</h3>
+                        <p>Ferramentas inteligentes para prefeituras modernas.</p>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://via.placeholder.com/800x400?text=Análise+de+Dados" alt="Funcionalidade 2">
-                    <h3>Análise de Dados</h3>
-                    <p>IA avançada para priorização de demandas urbanas.</p>
+                    <div class="card">
+                        <h3>IA Avançada</h3>
+                        <p>Processamento de dados para priorizar o que importa.</p>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://via.placeholder.com/800x400?text=Comunicação+Direta" alt="Funcionalidade 3">
-                    <h3>Comunicação Direta</h3>
-                    <p>Transparência total entre o cidadão e a prefeitura.</p>
+                    <div class="card">
+                        <h3>Cidadão Ativo</h3>
+                        <p>Sua voz ouvida diretamente pela administração.</p>
+                    </div>
                 </div>
             </div>
             <div class="swiper-button-next"></div>
@@ -58,14 +68,43 @@
         </div>
     </section>
 
+    <section id="equipe" class="section-white">
+        <h2>NOSSA EQUIPE</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="membro1.jpg" alt="Jef">
+                <h4>Jef Alenando</h4>
+                <p>Desenvolvedor Backend</p>
+            </div>
+            <div class="team-card">
+                <img src="membro2.jpg" alt="Robert">
+                <h4>Robert Venes</h4>
+                <p>Relator de Produtos</p>
+            </div>
+            <div class="team-card">
+                <img src="membro3.jpg" alt="Jnastiis">
+                <h4>Jnastiis Code</h4>
+                <p>Mobile Dev</p>
+            </div>
+            <div class="team-card">
+                <img src="membro4.jpg" alt="Marve">
+                <h4>Marve Fardera</h4>
+                <p>UI/UX Designer</p>
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        // Inicialização do Carrossel
         var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
             loop: true,
             pagination: { el: ".swiper-pagination", clickable: true },
             navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-            autoplay: { delay: 3000 }
+            breakpoints: {
+                768: { slidesPerView: 3 }
+            }
         });
     </script>
 </body>
