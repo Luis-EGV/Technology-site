@@ -94,15 +94,9 @@ header{
 
 .hero{
     width:100%;
-    min-height:100vh;
-    background:url('assets/banner.png') center center no-repeat;
-    background-size:cover;
-
-    display:flex;
-    align-items:flex-end;
-    justify-content:center;
-
-    padding:120px 5% 60px;
+    height:100vh;
+    background:url('assets/banner.png') center center/cover no-repeat;
+    position:relative;
 }
 
 .hero-content{
@@ -140,12 +134,11 @@ header{
 }
 
 .hero-buttons{
+    position:absolute;
+    bottom:80px;
+    left:80px;
     display:flex;
     gap:20px;
-    flex-wrap:wrap;
-
-    margin-left:220px;
-    margin-bottom:20px;
 }
 
 .btn{
