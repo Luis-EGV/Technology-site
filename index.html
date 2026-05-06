@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology Systems - Priora</title>
+    <title>Priora - Gestão Urbana Inteligente</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -13,99 +14,61 @@
         <div class="logo">TECHNOLOGY SYSTEMS</div>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#empresa">A Empresa</a></li>
-            <li><a href="#priora">O App Priora</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#carrossel">Funcionalidades</a></li>
             <li><a href="#equipe">Equipe</a></li>
         </ul>
     </nav>
 
-    <header id="home" class="hero-banner">
-        <div class="hero-text">
-            <h1>SUA CIDADE MELHOR TODOS OS DIAS!</h1>
-            <p>Com o <strong>PRIORA</strong> você ajuda a transformar sua cidade em um lugar mais ágil e inteligente.</p>
-            <div class="store-buttons">
-                <button>Google Play</button>
-                <button>App Store</button>
+    <header id="home" class="main-banner">
+        <div class="banner-content">
+            <div class="text-side">
+                <h1 class="title-main">SUA CIDADE <br><span>MELHOR TODOS OS DIAS!</span></h1>
+                <p class="subtitle">Com o <strong>PRIORA</strong> você ajuda a transformar sua cidade com praticidade, agilidade e transparência.</p>
+                
+                <div class="features-mini-grid">
+                    <div class="f-item">
+                        <div class="icon-circle"><i class="fa-solid fa-pen-to-square"></i></div>
+                        <strong>ENVIE</strong>
+                        <p>Registre denúncias em poucos cliques.</p>
+                    </div>
+                    <div class="f-item">
+                        <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+                        <strong>LOCALIZE</strong>
+                        <p>Informe o local exato com fotos.</p>
+                    </div>
+                    <div class="f-item">
+                        <div class="icon-circle"><i class="fa-solid fa-bell"></i></div>
+                        <strong>ACOMPANHE</strong>
+                        <p>Status da denúncia em tempo real.</p>
+                    </div>
+                    <div class="f-item">
+                        <div class="icon-circle"><i class="fa-solid fa-check-double"></i></div>
+                        <strong>TRANSFORME</strong>
+                        <p>Ajude a construir uma cidade melhor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-side">
+                <img src="celular-priora.png" alt="App Priora" class="phone-mockup">
+            </div>
+        </div>
+
+        <div class="banner-footer">
+            <div class="download-info">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <div>
+                    <strong>BAIXE AGORA</strong>
+                    <p>E FAÇA PARTE DA TRANSFORMAÇÃO!</p>
+                </div>
+            </div>
+            <div class="qr-code-area">
+                <p>Aponte a câmera do seu celular e baixe o app!</p>
+                <img src="qrcode.png" alt="QR Code" class="qr-img">
             </div>
         </div>
     </header>
 
-    <section id="empresa" class="section-white">
-        <img src="logo-tech-systems.png" alt="Logo Technology Systems" class="center-logo">
-        <div class="container">
-            <h2>TECHNOLOGY SYSTEMS</h2>
-            <p>A Technology Systems é uma empresa que tem como objetivo criar sistemas com Inteligência Artificial para solucionar problemas do dia-a-dia.</p>
-            <p>Temos como objetivo entregar produtos tecnológicos confiáveis, funcionais e que gerem resultados concretos para nossos clientes.</p>
-        </div>
-    </section>
-
-    <section id="priora" class="section-gray">
-        <h2>CONHEÇA O PRIORA</h2>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="card">
-                        <h3>Gestão Pública</h3>
-                        <p>Ferramentas inteligentes para prefeituras modernas.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card">
-                        <h3>IA Avançada</h3>
-                        <p>Processamento de dados para priorizar o que importa.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="card">
-                        <h3>Cidadão Ativo</h3>
-                        <p>Sua voz ouvida diretamente pela administração.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <section id="equipe" class="section-white">
-        <h2>NOSSA EQUIPE</h2>
-        <div class="team-grid">
-            <div class="team-card">
-                <img src="membro1.jpg" alt="Jef">
-                <h4>Jef Alenando</h4>
-                <p>Desenvolvedor Backend</p>
-            </div>
-            <div class="team-card">
-                <img src="membro2.jpg" alt="Robert">
-                <h4>Robert Venes</h4>
-                <p>Relator de Produtos</p>
-            </div>
-            <div class="team-card">
-                <img src="membro3.jpg" alt="Jnastiis">
-                <h4>Jnastiis Code</h4>
-                <p>Mobile Dev</p>
-            </div>
-            <div class="team-card">
-                <img src="membro4.jpg" alt="Marve">
-                <h4>Marve Fardera</h4>
-                <p>UI/UX Designer</p>
-            </div>
-        </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: { el: ".swiper-pagination", clickable: true },
-            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-            breakpoints: {
-                768: { slidesPerView: 3 }
-            }
-        });
-    </script>
-</body>
+    </body>
 </html>
