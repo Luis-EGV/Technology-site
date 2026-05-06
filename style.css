@@ -1,95 +1,110 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+:root {
+    --azul-escuro: #002d5b;
+    --azul-claro: #0056b3;
+    --verde-priora: #28a745;
+    --branco: #ffffff;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
 
-body {
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Navbar */
 #navbar {
-    background: #fff;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 15px 5%;
+    background: var(--branco);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-#navbar ul {
-    display: flex;
-    list-style: none;
-}
-
-#navbar ul li a {
-    text-decoration: none;
-    color: #003366;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
-/* Hero Banner */
-.hero-banner {
-    height: 90vh;
-    background: linear-gradient(to right, #004488, #0088cc); /* Substituir por imagem se preferir */
-    margin-top: 60px;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-    color: white;
-}
-
-.hero-text h1 { font-size: 3rem; max-width: 600px; }
-
-/* Seções */
-section { padding: 80px 10%; text-align: center; }
-.section-gray { background: #ececec; }
-
-.center-logo { width: 200px; margin-bottom: 20px; }
-
-/* Carrossel */
-.swiper { width: 100%; padding: 50px 0; }
-.card {
-    background: #003366;
-    color: white;
-    padding: 40px;
-    border-radius: 10px;
-    height: 250px;
+/* Estilização do Banner */
+.main-banner {
+    padding-top: 100px;
+    background: linear-gradient(135deg, #eef5ff 0%, #ffffff 100%);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-/* Grid da Equipe */
-.team-grid {
+.banner-content {
+    display: flex;
+    align-items: center;
+    padding: 40px 8%;
+    gap: 30px;
+}
+
+.title-main {
+    font-size: 3.5rem;
+    color: var(--azul-escuro);
+    line-height: 1.1;
+}
+
+.title-main span {
+    color: var(--verde-priora);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #555;
+    max-width: 500px;
+}
+
+/* Grade de ícones pequenos */
+.features-mini-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
     margin-top: 40px;
 }
 
-.team-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.f-item { text-align: center; font-size: 0.8rem; }
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background: var(--azul-escuro);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-size: 1.2rem;
 }
 
-.team-card img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    filter: grayscale(100%); /* Estilo das fotos na imagem */
+.f-item strong { display: block; color: var(--azul-escuro); margin-bottom: 5px; }
+
+/* Mockup do Celular */
+.phone-mockup {
+    max-width: 100%;
+    height: auto;
+    drop-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer do Banner (Azul Escuro) */
+.banner-footer {
+    background: var(--azul-escuro);
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-info { display: flex; align-items: center; gap: 15px; }
+.download-info i { font-size: 2.5rem; color: var(--verde-priora); }
+
+.qr-code-area { display: flex; align-items: center; gap: 20px; }
+.qr-img { width: 60px; background: white; padding: 5px; border-radius: 5px; }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner-content { flex-direction: column; text-align: center; }
+    .features-mini-grid { grid-template-columns: repeat(2, 1fr); }
+    .banner-footer { flex-direction: column; gap: 20px; text-align: center; }
 }
