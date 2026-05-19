@@ -13,6 +13,7 @@ function showSlide() {
 }
 
 function nextSlide() {
+
     index++;
 
     if(index > 2){
@@ -23,6 +24,7 @@ function nextSlide() {
 }
 
 function prevSlide() {
+
     index--;
 
     if(index < 0){
