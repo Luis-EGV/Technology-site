@@ -35,7 +35,8 @@ const totalSlides = document.querySelectorAll('.slide').length;
 let index = 0;
 
 function updateSlide(){
-    slides.style.transform = `translateX(-${index * 100}%)`;
+    slides.style.transform =
+    `translateX(calc(-${index * 100}%))`;
 }
 
 function nextSlide(){
