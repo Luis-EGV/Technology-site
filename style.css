@@ -40,6 +40,7 @@ header{
     color:white;
     font-size:2rem;
     font-weight:700;
+    text-decoration:none;
 }
 
 .logo span{
@@ -244,16 +245,16 @@ header{
 
 .slides{
     display:flex;
-    gap:30px;
     transition:transform .5s ease;
 }
 
 .slide{
-    min-width:calc(100% - 30px);
+    min-width:100%;
     background:white;
     border-radius:25px;
     padding:50px;
     text-align:center;
+    margin:0 15px;
 }
 
 .carousel-buttons{
@@ -361,28 +362,6 @@ footer{
 
 }
 
-@media(max-width:768px){
-
-.menu{
-    position:absolute;
-    top:80px;
-    left:-100%;
-    width:100%;
-    background:#083b66;
-    flex-direction:column;
-    text-align:center;
-    padding:30px 0;
-    transition:.4s;
-}
-
-.menu.active{
-    left:0;
-}
-
-.menu-toggle{
-    display:flex;
-}
-}
 /* MENU MOBILE */
 @media(max-width:768px){
 
@@ -397,8 +376,8 @@ footer{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    gap:30px;
-    transition:.4s ease;
+    gap:35px;
+    transition:left .4s ease-in-out;
     z-index:999;
 }
 
@@ -408,6 +387,10 @@ footer{
 
 .menu-toggle{
     display:flex;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+    z-index:1001;
 }
 
 /* LOGO */
