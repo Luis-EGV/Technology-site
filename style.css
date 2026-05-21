@@ -241,11 +241,13 @@ header{
 .carousel{
     max-width:1200px;
     margin:auto;
+    overflow:hidden;
 }
 
 .slides{
     display:flex;
     transition:transform .5s ease;
+    width:100%;
 }
 
 .slide{
@@ -254,7 +256,7 @@ header{
     border-radius:25px;
     padding:50px;
     text-align:center;
-    margin:0 15px;
+    flex-shrink:0;
 }
 
 .carousel-buttons{
