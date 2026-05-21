@@ -9,9 +9,10 @@ html{
     scroll-behavior:smooth;
 }
 
-body{
-    background:#f4f7fb;
+html, body{
+    width:100%;
     overflow-x:hidden;
+    background:#f4f7fb;
 }
 
 /* HEADER */
@@ -81,11 +82,12 @@ header{
 
 .hero{
     width:100%;
-    height:100vh;
+    min-height:100vh;
     background:url('assets/banner.png') center center/cover no-repeat;
     position:relative;
     display:flex;
     align-items:center;
+    justify-content:center;
     padding:0 8%;
 }
 
@@ -363,9 +365,15 @@ footer{
 }
 
 .hero{
-    padding:0 5%;
+    min-height:100vh;
+    background-position:center top;
+    background-size:cover;
 }
-
+    
+.hero-overlay{
+    background:rgba(0,0,0,0.45);
+}
+    
 .hero-text h1{
     font-size:2.5rem;
 }
