@@ -86,7 +86,7 @@ header{
     background-image:url('assets/banner.png');
     background-repeat:no-repeat;
     background-position:center;
-    background-size:cover;
+    background-size:100% 100%;
 
     position:relative;
     display:flex;
@@ -231,11 +231,12 @@ header{
 
 .slides{
     display:flex;
+    gap:30px;
     transition:transform .5s ease;
 }
 
 .slide{
-    min-width:100%;
+    min-width:calc(100% - 30px);
     background:white;
     border-radius:25px;
     padding:50px;
@@ -371,45 +372,98 @@ footer{
 }
 @media(max-width:768px){
 
-.hero{
+/* MENU MOBILE */
 
+.menu{
+    position:absolute;
+    top:80px;
+    left:-100%;
+    width:100%;
+    background:#083b66;
+    flex-direction:column;
+    text-align:center;
+    padding:30px 0;
+    transition:.4s;
+}
+
+.menu.active{
+    left:0;
+}
+
+.menu-toggle{
+    display:flex;
+}
+
+/* LOGO */
+
+.logo{
+    font-size:1.5rem;
+}
+
+/* HERO */
+
+.hero{
     min-height:100vh;
-    background-size:contain;
-    background-position:top center;
+    background-image:url('assets/banner.png');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-position:center;
     background-color:#083b66;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:20px;
 }
 
 .hero-overlay{
-    background:rgba(0,0,0,0.20);
+    background:rgba(0,0,0,0.15);
 }
-    
+
+/* TEXTO */
+
 .hero-text h1{
     font-size:2.5rem;
 }
 
+/* BOTÕES */
+
 .hero-buttons{
     position:relative;
-    left:auto;
-    transform:none;
-    bottom:auto;
     width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
     gap:15px;
+    margin-top:320px;
 }
 
 .btn{
     width:85%;
     max-width:320px;
+    text-align:center;
 }
 
-    .hero-content{
-    width:100%;
-    height:100%;
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-    padding-bottom:40px;
+/* TÍTULOS */
+
+.section-title h2{
+    font-size:2.2rem;
 }
+
+/* CARDS */
+
+.slide{
+    padding:30px 20px;
+}
+
+.features-grid,
+.team-grid{
+    gap:20px;
+}
+}
+*{
+    max-width:100%;
+}
+img{
+    max-width:100%;
+    height:auto;
 }
