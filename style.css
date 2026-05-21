@@ -363,34 +363,40 @@ footer{
 }
 
 /* MENU MOBILE */
+
 @media(max-width:768px){
 
 .menu{
     position:fixed;
-    top:0;
-    left:-100%;
-    width:75%;
-    height:100vh;
+    top:20px;
+    right:-100%;
+    width:280px;
+    height:auto;
     background:#083b66;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    gap:35px;
-    transition:left .4s ease-in-out;
+    gap:25px;
+    padding:35px 25px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    transition:right .4s ease-in-out;
     z-index:999;
 }
 
 .menu.active{
-    left:0;
+    right:20px;
 }
 
 .menu-toggle{
+
     display:flex;
     flex-direction:column;
     gap:5px;
     cursor:pointer;
     z-index:1001;
+    position:relative;
 }
 
 /* LOGO */
