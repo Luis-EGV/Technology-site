@@ -83,11 +83,16 @@ header{
 .hero{
     width:100%;
     min-height:100vh;
-    background:url('assets/banner.png') center center/cover no-repeat;
+    background-image:url('assets/banner.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
     position:relative;
     display:flex;
     align-items:center;
     justify-content:center;
+
     padding:0 8%;
 }
 
@@ -363,15 +368,19 @@ footer{
 .menu-toggle{
     display:flex;
 }
+}
+@media(max-width:768px){
 
 .hero{
+
     min-height:100vh;
-    background-position:center top;
-    background-size:cover;
+    background-size:contain;
+    background-position:top center;
+    background-color:#083b66;
 }
-    
+
 .hero-overlay{
-    background:rgba(0,0,0,0.45);
+    background:rgba(0,0,0,0.20);
 }
     
 .hero-text h1{
@@ -379,12 +388,28 @@ footer{
 }
 
 .hero-buttons{
-    position:absolute;
-
-    right:20px;
-    bottom:20px;
-
+    position:relative;
+    left:auto;
+    transform:none;
+    bottom:auto;
+    width:100%;
+    display:flex;
     flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.btn{
+    width:85%;
+    max-width:320px;
+}
+
+    .hero-content{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:flex-end;
     align-items:flex-end;
+    padding-bottom:40px;
 }
 }
