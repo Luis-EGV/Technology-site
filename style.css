@@ -242,12 +242,12 @@ header{
     max-width:1200px;
     margin:auto;
     overflow:hidden;
+    position:relative;
 }
 
 .slides{
     display:flex;
     transition:transform .5s ease;
-    width:100%;
 }
 
 .slide{
@@ -256,7 +256,6 @@ header{
     border-radius:25px;
     padding:50px;
     text-align:center;
-    flex-shrink:0;
 }
 
 .carousel-buttons{
