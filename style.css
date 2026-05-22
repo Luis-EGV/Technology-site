@@ -65,33 +65,48 @@ header{
 }
 
 #contact-btn{
-    background:#62d84e;
-    padding:10px 18px;
-    border-radius:10px;
+    width:100%;
+    padding:14px 22px;
+    border-radius:16px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.15);
     color:white;
-    transition:.3s;
+    font-weight:600;
+    font-size:1rem;
+    text-align:center;
+    transition:all .35s ease;
+    box-shadow:0 5px 18px rgba(0,0,0,0.25);
 }
 
 .download-btn{
-    background:#62d84e;
-    padding:12px 22px;
-    border-radius:12px;
+    width:100%;
+    padding:14px 22px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#62d84e,#43b132);
     color:white !important;
-    transition:.3s;
     font-weight:600;
+    font-size:1rem;
+    text-decoration:none;
     display:flex;
     align-items:center;
     justify-content:center;
+    transition:all .35s ease;
+    box-shadow:0 6px 18px rgba(98,216,78,0.35);
+    border:1px solid rgba(255,255,255,0.15);
 }
 
 .download-btn:hover{
-    background:white;
-    color:#083b66 !important;
+    transform:translateY(-3px);
+    background:linear-gradient(135deg,#7df266,#4ec93b);
+    box-shadow:0 10px 25px rgba(98,216,78,0.5);
 }
 
 #contact-btn:hover{
+    transform:translateY(-3px);
     background:white;
     color:#083b66;
+    box-shadow:0 10px 25px rgba(255,255,255,0.25);
 }
 
 /* MENU MOBILE */
@@ -343,18 +358,17 @@ footer{
     position:fixed;
     top:20px;
     right:-100%;
-    width:260px;
-    height:auto;
-    background:#083b66;
+    width:300px;
+    background:rgba(0,19,71,0.96);
+    backdrop-filter:blur(14px);
     display:flex;
     flex-direction:column;
-    justify-content:center;
     align-items:center;
-    gap:25px;
+    gap:22px;
     padding:35px 25px;
-    border-radius:20px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.3);
-    transition:right .4s ease-in-out;
+    border-radius:24px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.45);
+    transition:right .4s ease;
     z-index:999;
 }
 
