@@ -387,15 +387,10 @@ footer{
 /* HERO */
 
 .hero{
+    width:100%;
     min-height:100vh;
-    background-image:url('assets/banner.png');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    padding:20px;
+    background:url('assets/banner.png') center center/cover no-repeat;
+    position:relative;
 }
 
 /* TEXTO */
