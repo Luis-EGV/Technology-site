@@ -144,11 +144,12 @@ header{
 
 .hero-buttons{
     position:absolute;
-    right:140px;
-    bottom:190px;
+    right:520px;
+    bottom:55px;
     display:flex;
-    flex-direction:row;
-    gap:20px;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
     z-index:10;
 }
 
