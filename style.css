@@ -109,9 +109,7 @@ header{
 }
 
 .hero-overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.35);
+    display:none;
 }
 
 .hero-content{
@@ -146,8 +144,8 @@ header{
 
 .hero-buttons{
     position:absolute;
-    right:60px;
-    bottom:40px;
+    right:140px;
+    bottom:90px;
     display:flex;
     flex-direction:row;
     gap:20px;
