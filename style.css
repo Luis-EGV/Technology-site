@@ -72,6 +72,23 @@ header{
     transition:.3s;
 }
 
+.download-btn{
+    background:#62d84e;
+    padding:12px 22px;
+    border-radius:12px;
+    color:white !important;
+    transition:.3s;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.download-btn:hover{
+    background:white;
+    color:#083b66 !important;
+}
+
 #contact-btn:hover{
     background:white;
     color:#083b66;
@@ -141,41 +158,6 @@ header{
     font-size:1.3rem;
     line-height:1.6;
     margin-bottom:35px;
-}
-
-.hero-buttons{
-    position:absolute;
-    right:260px;
-    bottom:70px;
-    display:flex;
-    flex-direction:row;
-    gap:15px;
-    z-index:10;
-}
-
-.btn{
-    padding:16px 32px;
-    border:none;
-    border-radius:12px;
-    cursor:pointer;
-    font-size:1rem;
-    font-weight:600;
-    transition:.3s;
-    text-decoration:none;
-}
-
-.btn-primary{
-    background:#62d84e;
-    color:white;
-}
-
-.btn-secondary{
-    background:white;
-    color:#083b66;
-}
-
-.btn:hover{
-    transform:translateY(-4px);
 }
 
 /* FUNCIONALIDADES */
@@ -351,10 +333,6 @@ footer{
     max-width:100%;
 }
 
-.hero-buttons{
-    justify-content:center;
-}
-
 .hero-text h1{
     font-size:3.5rem;
 }
@@ -369,7 +347,7 @@ footer{
     position:fixed;
     top:20px;
     right:-100%;
-    width:280px;
+    width:260px;
     height:auto;
     background:#083b66;
     display:flex;
@@ -398,6 +376,12 @@ footer{
     position:relative;
 }
 
+.download-btn,
+#contact-btn{
+    width:100%;
+    text-align:center;
+}
+    
 /* LOGO */
 
 .logo{
@@ -430,16 +414,6 @@ footer{
 }
 
 /* BOTÕES */
-
-.hero-buttons{
-    position:absolute;
-    bottom:25px;
-    right:140px;
-    display:flex;
-    flex-direction:row;
-    gap:10px;
-    z-index:10;
-}
 
 .btn{
     width:auto;
