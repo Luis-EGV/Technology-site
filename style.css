@@ -390,9 +390,8 @@ footer{
     min-height:100vh;
     background-image:url('assets/banner.png');
     background-repeat:no-repeat;
-    background-size:100% 100%;
+    background-size:cover;
     background-position:center;
-    background-color:#083b66;
     display:flex;
     justify-content:flex-end;
     align-items:center;
