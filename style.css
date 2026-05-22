@@ -150,6 +150,7 @@ header{
     display:flex;
     flex-direction:row;
     align-items:center;
+    justify-content:center;
     gap:20px;
     z-index:10;
 }
@@ -433,18 +434,19 @@ footer{
 /* BOTÕES */
 
 .hero-buttons{
-    position:relative;
-    width:100%;
+    position:absolute;
+    right:20px;
+    bottom:20px;
     display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-    margin-top:320px;
+    flex-direction:row;
+    gap:10px;
+    width:auto;
+    margin-top:0;
 }
 
 .btn{
-    width:85%;
-    max-width:320px;
+    width:auto;
+    max-width:none;
     text-align:center;
 }
 
