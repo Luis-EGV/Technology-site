@@ -145,7 +145,7 @@ header{
 .hero-buttons{
     position:absolute;
     right:140px;
-    bottom:90px;
+    bottom:290px;
     display:flex;
     flex-direction:row;
     gap:20px;
