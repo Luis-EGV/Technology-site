@@ -403,18 +403,19 @@ footer{
 
 .hero{
     width:100%;
-    min-height:100vh;
-    background:url('assets/banner.png') center center/cover no-repeat;
+    min-height:auto;
+    height:100vh;
+    background-image:url('assets/banner.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center top;
+    background-color:#083b66;
     position:relative;
 }
-
-/* TEXTO */
 
 .hero-text h1{
     font-size:2.5rem;
 }
-
-/* BOTÕES */
 
 .btn{
     width:auto;
@@ -422,13 +423,9 @@ footer{
     text-align:center;
 }
 
-/* TÍTULOS */
-
 .section-title h2{
     font-size:2.2rem;
 }
-
-/* CARDS */
 
 .slide{
     padding:30px 20px;
