@@ -101,12 +101,10 @@ header{
     background-repeat:no-repeat;
     background-position:center;
     background-size:100% 100%;
-
     position:relative;
     display:flex;
     align-items:center;
     justify-content:center;
-
     padding:0 8%;
 }
 
@@ -148,14 +146,14 @@ header{
 
 .hero-buttons{
     position:absolute;
-
-    right:60px;
-    bottom:40px;
-
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%);
+    width:100%;
     display:flex;
-    gap:20px;
-
-    z-index:10;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
 }
 
 .btn{
