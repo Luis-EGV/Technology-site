@@ -50,7 +50,7 @@ header{
 .menu{
     display:flex;
     align-items:center;
-    gap:35px;
+    gap:25px;
 }
 
 .menu a{
@@ -80,26 +80,25 @@ header{
 }
 
 .download-btn{
-    width:100%;
-    padding:14px 22px;
+    background:#62d84e;
+    padding:14px 28px;
     border-radius:16px;
-    background:linear-gradient(135deg,#62d84e,#43b132);
     color:white !important;
+    transition:.3s;
     font-weight:600;
-    font-size:1rem;
     text-decoration:none;
     display:flex;
     align-items:center;
     justify-content:center;
-    transition:all .35s ease;
-    box-shadow:0 6px 18px rgba(98,216,78,0.35);
-    border:1px solid rgba(255,255,255,0.15);
+    min-width:170px;
+    height:60px;
+    box-shadow:0 4px 15px rgba(98,216,78,0.35);
 }
 
 .download-btn:hover{
+    background:white;
+    color:#083b66 !important;
     transform:translateY(-3px);
-    background:linear-gradient(135deg,#7df266,#4ec93b);
-    box-shadow:0 10px 25px rgba(98,216,78,0.5);
 }
 
 #contact-btn:hover{
