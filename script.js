@@ -54,4 +54,4 @@ function prevSlide(){
     }
     updateSlide();
 }
-}
+
