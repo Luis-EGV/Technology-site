@@ -90,7 +90,6 @@ header{
     display:flex;
     align-items:center;
     justify-content:center;
-    min-width:170px;
     height:60px;
     box-shadow:0 4px 15px rgba(98,216,78,0.35);
 }
