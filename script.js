@@ -36,7 +36,7 @@ let index = 0;
 
 function updateSlide(){
     slides.style.transform =
-    `translateX(-${index * 100}%)`;
+    `translateX(calc(-${index * 100}% - ${index * 40}px))`;
 }
 
 function nextSlide(){
