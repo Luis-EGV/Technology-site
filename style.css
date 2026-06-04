@@ -236,14 +236,12 @@ header{
 
 .slides{
     display:flex;
-    width:100%;
+    gap:40px; 
     transition:transform .5s ease;
 }
 
 .slide{
-    width:100%;
-    min-width:100%;
-    flex-shrink:0;
+    flex:0 0 100%;
     background:white;
     border-radius:25px;
     padding:50px;
